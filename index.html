@@ -12,21 +12,30 @@
     <header>
         <div class="caixa">
             <h1 class="titulo">Cuidar da sua saúde e bem-estar também é se amar</h1>
-            <ul class="lista">
-                <li>Alimente-se bem</li>
-                <li>Pratique Exercícios</li>
-                <li>Tenha hábitos saudáveis</li>
-                <li>Beba água</li>
-            </ul>
+            <div class="lista">
+                <ul>
+                    <li>Alimente-se bem</li>
+                    <li>Pratique Exercícios</li>
+                    <li>Tenha hábitos saudáveis</li>
+                    <li>Beba água</li>
+                </ul>
+            </div>
         </div>
     </header>
+
     <img class="banner" src="img/banner.jpg">
 
-    <main>
-        <section class="principal">
-            <h2 class="titulodois">Calcule aqui o seu índice de massa corporal (IMC)</h2>
-
-        </section>
-    </main>
+        <div class="container">
+            <h2>Calcule seu IMC</h2>
+            <br>
+            <label for="peso">Digite seu peso:</label>
+            <input type="number" placeholder="ex:60kg" id="peso">
+            <br><br>
+            <label for="altura">Digite sua altura:</label>
+            <input type="number" placeholder="ex:1.60" id="altura">
+            <br><br>
+            <button>Calcular!</button>
+        </div>
+    
 </body>
 </html>
