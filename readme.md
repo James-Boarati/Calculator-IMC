@@ -1,6 +1,6 @@
 <h1 align="center">
     Calculadora de IMC
-    <img src ="img/fotoprojeto.jpg">
+    <img src ="img/testeprojeto.jpg">
 </h1>
 
 ---
