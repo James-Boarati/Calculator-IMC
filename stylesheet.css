@@ -21,7 +21,7 @@ body {
 
 .lista {
     font-size: 25px;
-    margin-left: 35em;
+    text-align: center;
     
 }
 
@@ -58,7 +58,7 @@ li:hover {
 button {
     padding:10px;
     margin:10px;
-    background-color: steelblue;
+    background-color:  steelblue;
     color:white;
     font-size: 22px;
     border: none;
