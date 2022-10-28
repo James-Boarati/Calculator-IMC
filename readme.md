@@ -1,7 +1,8 @@
 <h1 align="center">
     Calculadora de IMC
-    <img src ="fotoreadme/fotoprojeto.jpg">
 </h1>
+
+<img src ="fotoreadme/fotoprojeto.jpg">
 
 ---
 
