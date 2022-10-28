@@ -1,20 +1,35 @@
-function calcular() {
-    var peso = document.getElementById("peso").value;
-    var altura = document.getElementById("altura").value;
+const calcular = document.getElementById('calcular');
 
-    var imc = peso / altura ** 2;
-    var texto=""
-    if (imc < 18.5) {
-        texto="Você está muito magro"
-    } else if (imc < 24.9) {
-        texto="Você está normal"
-    } else if (imc < 29.9) {
-        texto="Você está com sobrepeso"
-    } else if (imc < 39.9) {
-        texto="Você está com obesidade"
-    } else if (imc > 39.9) {
-        texto="Você está com obesidade mórbida"
+function imc () {
+    const peso = document.getElementById('peso').value;
+    const altura = document.getElementById('altura').value;
+    const resultado = document.getElementById('resultado');
+
+    if (peso !== '' && altura !== '' && peso !== '') {
+        
+        const valorIMC = (peso / (altura * altura)).toFixed(1);
+
+        let classificacao ='';
+
+        if (valorIMC < 18.5){
+            classificacao = 'abaixo do peso.';
+        }else if (valorIMC < 25) {
+            classificacao = 'com peso ideal. Parabens!!!';
+        }else if (valorIMC < 30) {
+            classificacao = 'levemente acima do peso.';
+        }else if (valorIMC < 35) {
+            classificacao = 'com obesidade grau 1.';
+        }else if (valorIMC < 40) {
+            classificacao = 'com obesidade grau 2.';
+        }else {
+            classificacao = 'com obesidade grau 3. Cuidado!!!';
+        } 
+
+        resultado.textContent = `Seu imc é ${valorIMC}, e você está ${classificacao}`;
+
+    } else {
+        resultado.textContent = 'Preencha todos os campos!'
     }
-    document.getElementById("areadetexto").innerText=texto
 }
- 
+
+calcular.addEventListener('click', imc);
