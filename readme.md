@@ -2,9 +2,9 @@
     Calculadora de IMC
 </h1>
 
-## Link do projeto : https://james-boarati.github.io/Calculator-IMC/
----
+<img src ="./assets/img/fotoreadme.JPG">
 
+---
 
 ## ✉ Sobre
 O projeto **Calculadora de IMC** é um programa criado para calcular o índice de massa corporal de uma 
